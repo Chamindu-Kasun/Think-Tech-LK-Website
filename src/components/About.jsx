@@ -1,6 +1,8 @@
 import './About.css';
+import { useState } from 'react';
 
 const About = () => {
+
   return (
     <section id="about" className="about-section">
       <h2 className="about-section-title hover-effect">
@@ -16,7 +18,7 @@ const About = () => {
               className="profile-image" 
             />
             <img 
-              src="/Think-Tech-LK.PNG" 
+              src="/Graduation.GIF" 
               alt="Cartoon Chamindu Kasun"
               className="profile-image-cartoon" 
             />
@@ -26,12 +28,12 @@ const About = () => {
         </div>
         
         <div className="about-content">
-          <p className="about-description">
-            Welcome to my portfolio! I'm Chamindu Kasun, a passionate Software Engineer and Educator.
-            Through my brand, <strong>ThinkTechLK</strong>, I aim to inspire and educate others about
-            technology and software development. I create engaging YouTube videos and write insightful
-            Medium articles to share knowledge and empower learners worldwide.
-          </p>
+<p className="about-description">
+  Hi. I'm <strong>Chamindu Kasun Karunarathna</strong> — a dedicated <strong>Educator</strong> committed to making technology education 
+  engaging, practical, and inspiring for students. I strive to bridge the gap between academic learning and 
+  real-world applications in Information Technology. My focus is on helping students develop strong 
+  analytical, critical thinking, and problem-solving skills that prepare them for the evolving world of technology.
+</p>
 
           <div className="skills-container">
             <h4>My Services</h4>

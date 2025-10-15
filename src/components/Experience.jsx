@@ -28,9 +28,11 @@ const Experience = () => {
               <p className="duration">{item.duration}</p>
               <h3 className="title">{item.title}</h3>
               <p className="organization">{item.organization}</p>
+              {item.type === "Academic" ? (
               <button className="show-more" onClick={() => openModal(item)}>
                 Show More
               </button>
+              ) : (<></>)}
             </div>
           </div>
         ))}
@@ -43,7 +45,7 @@ const Experience = () => {
             <p className="modal-duration">Service Time: {modalContent.duration}</p>
             
             <ul className="responsibilities">
-              <p className="responsibilities-title">Responsibilities:</p>
+              <p className="responsibilities-title">Subjects Taught:</p>
               {modalContent.responsibilities.map((responsibility, idx) => (
                 <li key={idx}>{responsibility}</li>
               ))}

@@ -1,6 +1,8 @@
 [
   {
-    "title": "Lecturer - Information Technology",
+    "title": "Visiting Lecturer - Information Technology",
+        "type": "Academic",
+            "image": "/ENC.png",
     "duration": "Feb 2025 - Present",
     "organization": "European Nations Campus",
     "responsibilities": [
@@ -11,7 +13,9 @@
     ]
   },
   {
-    "title": "Lecturer - Information Technology",
+    "title": "Visiting Lecturer - Information Technology",
+            "type": "Academic",
+            "image": "/Esoft.jpg",
     "duration": "Sep 2024 - Dec 2024",
     "organization": "Esoft Metro Campus",
     "responsibilities": [
@@ -24,6 +28,8 @@
   },
   {
     "title": "Temporary Demonstrator - Information Technology",
+            "type": "Academic",
+                "image": "/University-Of-Kelaniya.png",
     "duration": "Sep 2023 - Sep 2024",
     "organization": "University of Kelaniya",
     "responsibilities": [
@@ -35,9 +41,46 @@
     ]
   },
   {
-    "title": "Software Developer - Intern",
+    "title": "Software Engineer",
+            "type": "Industry",
+                "image": "",
+    "duration": "Dec 2024 - Present",
+    "organization": "MCB Bank (Pvt) Ltd",
+    "responsibilities": [
+      "Designed and developed web and mobile applications.",
+      "Collaborated with cross-functional teams to define, design, and ship new features.",
+      "Maintained code quality, organization, and automatization.",
+      "Designed and developed relational and non-relational databases (MySQL, SQL Server, Oracle DB).",
+      "Conducted unit and API testing using Jest and Postman to ensure software quality."
+    ]
+  },
+  {
+    "title": "Associate Software Engineer",
+                "type": "Industry",
+                "image": "",
     "duration": "Oct 2022 - Aug 2023",
     "organization": "Codimite (Pvt) Ltd",
-    "responsibilities": []
+    "responsibilities": [
+      "Maintained code quality, organization, and automatization.",
+      "Developed Web3.0 applications.",
+      "Built scalable APIs.",
+      "Designed and developed relational and non-relational databases (MySQL, MongoDB).",
+      "Conducted unit and API testing using Jest and Postman to ensure software quality.",
+      "Created and deployed smart contracts on blockchain networks.",
+      "Utilized GCP, Docker, and Kubernetes for efficient cloud deployment and orchestration."
+    ]
+  },
+  {
+    "title": "Software Developer - Intern",
+                "type": "Industry",
+                "image": "",
+    "duration": "Aug 2021 - Oct 2022",
+    "organization": "MobiOs (Pvt) Ltd",
+    "responsibilities": [
+      "Designed and developed web and mobile applications using React Native and Next.js.",
+      "Built RESTful APIs",
+      "Participated in code reviews and maintained code quality.",
+      "Learned and applied best practices in software development."
+    ]
   }
 ]

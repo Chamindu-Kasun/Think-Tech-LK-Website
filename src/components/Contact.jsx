@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="contact-container">
         <h2 className="section-title">Contact Me</h2>
         <p>
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          I'm always open to academic collaborations, lecturing opportunities, and discussions in Information Technology education.
         </p>
         <button className="contact-button" onClick={openModal}>Get in Touch</button>
         {isModalOpen && (
