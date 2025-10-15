@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Lecturer - Information Technology",
+    "duration": "Feb 2025 - Present",
+    "organization": "European Nations Campus",
+    "responsibilities": [
+      "Database design and development",
+      "Data Analytics",
+      "System Administration",
+      "Web applications development"
+    ]
+  },
+  {
+    "title": "Lecturer - Information Technology",
+    "duration": "Sep 2024 - Dec 2024",
+    "organization": "Esoft Metro Campus",
+    "responsibilities": [
+      "Database design and development",
+      "Python programming",
+      "Object-Oriented programming - C#",
+      "Internet of Things",
+      "Emerging Technologies"
+    ]
+  },
+  {
+    "title": "Temporary Demonstrator - Information Technology",
+    "duration": "Sep 2023 - Sep 2024",
+    "organization": "University of Kelaniya",
+    "responsibilities": [
+      "Database design and development",
+      "Web applications development",
+      "Mobile applications development",
+      "Object-oriented programming",
+      "Fundamentals of computing"
+    ]
+  },
+  {
+    "title": "Software Developer - Intern",
+    "duration": "Oct 2022 - Aug 2023",
+    "organization": "Codimite (Pvt) Ltd",
+    "responsibilities": []
+  }
+]

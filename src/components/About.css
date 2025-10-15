@@ -1,0 +1,303 @@
+.about-section {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: var(--surface-color);
+  margin-top: 15rem; /* Add spacing between Navbar and About section */
+}
+
+.about-container {
+  max-width: 1400px; /* Match the navbar's max-width */
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+  max-width: 350px; /* Match the image size */
+  border-radius: 50%; /* Make the image circular */
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.profile-image {
+  width: 350px; /* Larger size */
+  height: 350px; /* Ensure equal width and height */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image fully fits within the circle */
+  object-position: top; /* Focus on the top part of the image */
+  border: 3px solid #007bff; /* Optional: Add a border to match the theme */
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  z-index: 1; /* Ensure it appears below the cartoon image */
+}
+
+.profile-image:hover {
+  transform: rotateY(180deg); /* Add a flipping effect */
+  opacity: 0; /* Fade out the original image */
+}
+
+.profile-image-cartoon {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid #007bff;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  z-index: 2; /* Ensure it appears above the original image */
+}
+
+.profile-image:hover + .profile-image-cartoon {
+  transform: rotateY(0deg); /* Flip back to show cartoon version */
+  opacity: 1; /* Fade in the cartoon image */
+}
+
+.blue-blur {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: var(--accent-color);
+  filter: blur(100px);
+  opacity: 0.2;
+  top: -20px;
+  left: -20px;
+  z-index: 0;
+}
+
+.about-content {
+  text-align: center; /* Center align the content */
+  padding-right: 0; /* Remove padding for better centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center; /* Center the title */
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.about-description {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.skills-container {
+  margin-bottom: 3rem;
+}
+
+.skills-container h4 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: var(--surface-color);
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+}
+
+.about-title {
+  font-size: 1.5rem; /* Make the name smaller */
+  text-align: center;
+  margin-top: 1rem; /* Add spacing from the top */
+  white-space: nowrap; /* Ensure the name fits in one line */
+  margin-bottom: 0.5rem; /* Reduce space between name and job title */
+}
+
+.about-image-container h3 {
+  color: var(--accent-color); /* Use a suitable color for dark mode */
+  margin-top: 0; /* Remove unnecessary top margin */
+}
+
+.about-section-title {
+  font-size: 2.5rem; /* Match the font size of Videos title */
+  color: var(--text-color);
+  margin-bottom: 3rem; /* Match the margin of Videos title */
+  font-weight: 700; /* Match the font weight of Videos title */
+  text-align: center;
+  text-transform: uppercase; /* Keep the title uppercase */
+  text-decoration: underline !important; /* Add underline style */
+  text-decoration-color: var(--accent-color) !important; /* Use accent color for underline */
+  text-decoration-thickness: 2px !important; /* Make the underline thicker */
+  text-underline-offset: 4px !important; /* Add spacing between text and underline */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  text-transform: uppercase; /* Make the title uppercase */
+  text-decoration: underline; /* Add underline style */
+  text-decoration-color: var(--accent-color); /* Use accent color for underline */
+  text-decoration-thickness: 2px; /* Make the underline thicker */
+  text-underline-offset: 4px; /* Add spacing between text and underline */
+  font-size: 2.5rem; /* Ensure consistent font size */
+  color: var(--text-color);
+  margin-bottom: 3rem; /* Add spacing below the title */
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-section .hover-effect {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.6s ease;
+  text-decoration: none;
+}
+
+.about-section .hover-effect:hover {
+  transform: rotateY(180deg); /* Restore rotation effect */
+}
+
+.about-section .hover-text {
+  transition: opacity 0.6s ease;
+}
+
+.about-section .hover-effect:hover .hover-text {
+  opacity: 0; /* Hide the text */
+}
+
+.about-section .hover-emoji {
+  display: inline;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem; /* Adjust size for visibility */
+}
+
+.about-section .hover-effect:hover .hover-emoji {
+  opacity: 1; /* Show the emoji */
+}
+
+@media (max-width: 968px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image-container {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 6rem 0 3rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-image {
+  width: 200px; /* Larger size */
+  height: 200px; /* Ensure equal width and height */
+}
+
+  .profile-image-cartoon {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-title {
+    white-space: wrap;
+}
+}
